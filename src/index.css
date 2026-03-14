@@ -92,7 +92,7 @@ body {
       @apply size-14 3xl:size-20 cursor-pointer;
 
       img {
-        @apply object-cover object-center;
+        @apply object-cover object-center size-full rounded-2xl;
       }
     }
   }
@@ -179,6 +179,8 @@ body {
         @apply py-5 my-5 border-y border-dashed space-y-1;
 
         li {
+          @apply flex items-center;
+
           .check {
             @apply text-[#00A154] w-5;
           }
@@ -188,7 +190,7 @@ body {
           }
 
           ul {
-            @apply flex items-center gap-3;
+            @apply flex flex-wrap items-center gap-3;
           }
         }
       }
@@ -268,14 +270,14 @@ body {
       @apply p-5;
 
       ul {
-        @apply grid grid-cols-5 grid-rows-5 gap-2.5;
+        @apply grid grid-cols-5 grid-rows-5 gap-2.5 h-[50vh];
 
         li {
           img {
             @apply size-full object-cover rounded-lg;
           }
 
-          &:first-child {
+          &:nth-child(1) {
             @apply row-start-1 row-span-3 col-start-1 col-span-3;
           }
 
@@ -287,7 +289,7 @@ body {
             @apply row-start-4 row-span-2 col-start-3 col-span-3;
           }
 
-          &:last-child {
+          &:nth-child(4) {
             @apply row-start-4 row-span-2 col-start-1 col-span-2;
           }
         }
