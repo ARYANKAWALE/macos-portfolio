@@ -394,4 +394,368 @@ body {
       }
     }
   }
+
+  /* ========================================
+     iOS MOBILE STYLES
+     ======================================== */
+
+  /* Dynamic Island */
+  .dynamic-island-wrapper {
+    @apply fixed top-3 left-0 right-0 flex justify-center z-[9999];
+  }
+
+  .dynamic-island {
+    width: 126px;
+    height: 36px;
+    @apply bg-black rounded-full relative cursor-pointer overflow-hidden;
+    box-shadow:
+      0 2px 20px rgba(0, 0, 0, 0.4),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+    transform-origin: center;
+  }
+
+  .di-camera {
+    @apply absolute w-3 h-3 rounded-full;
+    background: radial-gradient(circle, #1a1a2e 40%, #0d0d1a 100%);
+    box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.1);
+    top: 50%;
+    right: 18px;
+    transform: translateY(-50%);
+  }
+
+  .di-content {
+    @apply flex justify-between items-center w-full h-full px-6 py-3 opacity-0;
+    min-height: 80px;
+  }
+
+  .di-expanded-left {
+    @apply flex flex-col;
+  }
+
+  .di-greeting {
+    @apply text-white/60 text-xs font-medium;
+  }
+
+  .di-name {
+    @apply text-white text-sm font-semibold mt-0.5;
+  }
+
+  .di-expanded-right {
+    @apply flex flex-col items-end;
+  }
+
+  .di-time {
+    @apply text-white text-2xl font-light;
+  }
+
+  .di-date {
+    @apply text-white/50 text-xs;
+  }
+
+  /* iOS Status Bar */
+  .ios-status-bar {
+    @apply fixed top-0 left-0 right-0 flex justify-between items-center px-8 z-[9998];
+    padding-top: env(safe-area-inset-top, 8px);
+    height: 54px;
+  }
+
+  .ios-sb-left {
+    @apply flex items-center;
+  }
+
+  .ios-sb-time {
+    @apply text-white text-sm font-semibold;
+    letter-spacing: 0.5px;
+  }
+
+  .ios-sb-center {
+    @apply flex-1;
+  }
+
+  .ios-sb-right {
+    @apply flex items-center gap-1.5;
+  }
+
+  .ios-battery {
+    @apply flex items-center ml-1;
+  }
+
+  .ios-battery-body {
+    @apply w-6 h-3 border border-white/80 rounded-sm relative;
+  }
+
+  .ios-battery-fill {
+    @apply absolute top-0.5 left-0.5 bottom-0.5 right-1 bg-white rounded-xs;
+  }
+
+  .ios-battery-cap {
+    @apply w-0.5 h-1.5 bg-white/80 rounded-r-sm;
+  }
+
+  /* iOS Home Screen */
+  .ios-home-screen {
+    @apply fixed inset-0 flex flex-col items-center z-[100];
+    padding-top: 100px;
+    padding-bottom: env(safe-area-inset-bottom, 20px);
+  }
+
+  .ios-welcome-text {
+    @apply text-center mb-8 px-6;
+  }
+
+  .ios-welcome-subtitle {
+    @apply text-white/70 text-sm font-medium tracking-wide;
+    font-family: "Georama", sans-serif;
+  }
+
+  .ios-welcome-title {
+    @apply text-white text-3xl font-bold italic mt-1;
+    font-family: "Georama", sans-serif;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  /* App Grid */
+  .ios-app-grid {
+    @apply grid grid-cols-4 gap-x-6 gap-y-6 px-8 w-full max-w-sm;
+  }
+
+  .ios-app-icon {
+    @apply flex flex-col items-center gap-1.5 bg-transparent border-none cursor-pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .ios-app-icon:active .ios-app-icon-img {
+    transform: scale(0.9);
+  }
+
+  .ios-app-icon-img {
+    @apply w-16 h-16 rounded-2xl overflow-hidden shadow-lg;
+    transition: transform 0.15s ease;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+  }
+
+  .ios-app-icon-img img {
+    @apply w-full h-full object-cover;
+  }
+
+  .ios-app-label {
+    @apply text-white text-[11px] font-medium text-center truncate w-16;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Page Dots */
+  .ios-page-dots {
+    @apply flex items-center gap-1.5 mt-6 mb-auto;
+  }
+
+  .ios-dot {
+    @apply w-1.5 h-1.5 rounded-full bg-white/30 transition-all duration-300;
+  }
+
+  .ios-dot.active {
+    @apply bg-white w-2 h-2;
+  }
+
+  /* iOS Dock */
+  .ios-dock {
+    @apply flex items-center justify-center gap-5 w-full max-w-xs mx-auto py-3 px-5 rounded-3xl;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    box-shadow:
+      0 -2px 20px rgba(0, 0, 0, 0.1),
+      inset 0 0 0 0.5px rgba(255, 255, 255, 0.2);
+    margin-bottom: 10px;
+  }
+
+  .ios-dock-icon {
+    @apply w-14 h-14 rounded-2xl overflow-hidden shadow-md bg-transparent border-none cursor-pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 0.15s ease;
+  }
+
+  .ios-dock-icon:active {
+    transform: scale(0.9);
+  }
+
+  .ios-dock-icon img {
+    @apply w-full h-full object-cover;
+  }
+
+  /* iOS Home Indicator */
+  .ios-home-indicator-wrapper {
+    @apply fixed bottom-2 left-0 right-0 flex justify-center z-[10000] pointer-events-none;
+  }
+
+  .ios-home-indicator {
+    @apply w-36 h-1.5 rounded-full bg-white/60;
+  }
+
+  /* Mobile Overlay */
+  .mobile-overlay {
+    @apply fixed inset-0 z-[5000];
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+
+  /* Mobile App Sheet */
+  .mobile-app-sheet {
+    @apply fixed bottom-0 left-0 right-0 flex flex-col bg-white overflow-hidden;
+    height: 95vh;
+    border-radius: 40px 40px 0 0;
+    box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.3);
+  }
+
+  .mobile-sheet-header {
+    @apply flex items-center justify-between px-4 py-3 bg-gray-50 border-b border-gray-200;
+    padding-top: env(safe-area-inset-top, 12px);
+    border-radius: 40px 40px 0 0;
+  }
+
+  .mobile-back-btn {
+    @apply flex items-center gap-0.5 text-blue-500 bg-transparent border-none cursor-pointer text-base font-medium;
+    -webkit-tap-highlight-color: transparent;
+    min-width: 70px;
+  }
+
+  .mobile-sheet-title {
+    @apply text-sm font-semibold text-gray-800 text-center flex-1;
+  }
+
+  .mobile-sheet-spacer {
+    min-width: 70px;
+  }
+
+  .mobile-sheet-content {
+    @apply flex-1 overflow-y-auto overflow-x-hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Remove window controls on mobile sheets */
+  .mobile-sheet-content #window-controls {
+    @apply hidden;
+  }
+
+  /* Override window header on mobile to remove controls area padding */
+  .mobile-sheet-content #window-header {
+    @apply hidden;
+  }
+
+  .mobile-sheet-indicator {
+    @apply flex justify-center py-2 bg-white;
+  }
+
+  /* Mobile-specific window overrides */
+  @media (max-width: 640px) {
+    /* Make all windows take full width inside sheets */
+    #safari,
+    #terminal,
+    #contact,
+    #photos,
+    #resume,
+    #finder,
+    #txtfile,
+    #imgfile {
+      position: relative !important;
+      width: 100% !important;
+      top: auto !important;
+      left: auto !important;
+      right: auto !important;
+      box-shadow: none !important;
+      border-radius: 0 !important;
+      transform: none !important;
+    }
+
+    /* Safari blog on mobile */
+    #safari .blog {
+      @apply p-4;
+    }
+
+    #safari .blog .blog-post {
+      @apply flex flex-col gap-3;
+    }
+
+    #safari .blog .blog-post .content {
+      @apply col-span-full;
+    }
+
+    /* Terminal on mobile */
+    #terminal .techstack {
+      @apply text-xs p-3;
+    }
+
+    #terminal .techstack .content li {
+      @apply flex-col items-start gap-1;
+    }
+
+    #terminal .techstack .content li h3 {
+      @apply w-auto ms-0;
+    }
+
+    #terminal .techstack .content li .check {
+      @apply hidden;
+    }
+
+    #terminal .techstack .label {
+      @apply ms-0;
+    }
+
+    /* Contact on mobile */
+    #contact ul {
+      @apply flex-col;
+    }
+
+    #contact ul li {
+      @apply w-full;
+    }
+
+    /* Photos on mobile */
+    #photos .sidebar {
+      @apply hidden;
+    }
+
+    #photos .gallery ul {
+      @apply grid-cols-2 grid-rows-none gap-2 h-auto;
+    }
+
+    #photos .gallery ul li {
+      @apply row-auto col-auto;
+    }
+
+    #photos .gallery ul li:nth-child(1),
+    #photos .gallery ul li:nth-child(2),
+    #photos .gallery ul li:nth-child(3),
+    #photos .gallery ul li:nth-child(4) {
+      grid-row: auto !important;
+      grid-column: auto !important;
+    }
+
+    /* Finder on mobile */
+    #finder .sidebar {
+      @apply hidden;
+    }
+
+    #finder .content {
+      @apply p-4;
+    }
+
+    #finder .content li {
+      position: relative !important;
+      top: auto !important;
+      left: auto !important;
+      right: auto !important;
+    }
+
+    /* Resume on mobile */
+    #resume {
+      @apply w-full;
+    }
+
+    /* Image on mobile */
+    #imgfile .preview img {
+      max-height: 50vh !important;
+    }
+  }
 }

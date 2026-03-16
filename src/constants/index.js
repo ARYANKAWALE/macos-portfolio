@@ -75,28 +75,28 @@ const dockApps = [
 ];
 
 const blogPosts = [
-  {
-    id: 1,
-    date: "Sep 2, 2025",
-    title:
-      "TypeScript Explained: What It Is, Why It Matters, and How to Master It",
-    image: "/images/blog1.png",
-    link: "https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it",
-  },
-  {
-    id: 2,
-    date: "Aug 28, 2025",
-    title: "The Ultimate Guide to Mastering Three.js for 3D Development",
-    image: "/images/blog2.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development",
-  },
-  {
-    id: 3,
-    date: "Aug 15, 2025",
-    title: "The Ultimate Guide to Mastering GSAP Animations",
-    image: "/images/blog3.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
-  },
+  // {
+  //   id: 1,
+  //   date: "Sep 2, 2025",
+  //   title:
+  //     "TypeScript Explained: What It Is, Why It Matters, and How to Master It",
+  //   image: "/images/blog1.png",
+  //   link: "https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it",
+  // },
+  // {
+  //   id: 2,
+  //   date: "Aug 28, 2025",
+  //   title: "The Ultimate Guide to Mastering Three.js for 3D Development",
+  //   image: "/images/blog2.png",
+  //   link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development",
+  // },
+  // {
+  //   id: 3,
+  //   date: "Aug 15, 2025",
+  //   title: "The Ultimate Guide to Mastering GSAP Animations",
+  //   image: "/images/blog3.png",
+  //   link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
+  // },
 ];
 
 const techStack = [
@@ -390,47 +390,48 @@ const ABOUT_LOCATION = {
   icon: "/icons/info.svg",
   kind: "folder",
   children: [
-    {
-      id: 1,
-      name: "me.png",
-      icon: "/images/image.png",
-      kind: "file",
-      fileType: "img",
-      position: "top-10 left-5",
-      imageUrl: "/images/adrian.jpg",
-    },
-    {
-      id: 2,
-      name: "casual-me.png",
-      icon: "/images/image.png",
-      kind: "file",
-      fileType: "img",
-      position: "top-28 right-72",
-      imageUrl: "/images/adrian-2.jpg",
-    },
-    {
-      id: 3,
-      name: "conference-me.png",
-      icon: "/images/image.png",
-      kind: "file",
-      fileType: "img",
-      position: "top-52 left-80",
-      imageUrl: "/images/adrian-3.jpeg",
-    },
+    // {
+    //   id: 1,
+    //   // name: "me.png",
+    //   icon: "/images/image.png",
+    //   kind: "file",
+    //   fileType: "img",
+    //   position: "top-10 left-5",
+    //   imageUrl: "/images/adrian.jpg",
+    // },
+    // {
+    //   id: 2,
+    //   name: "casual-me.png",
+    //   icon: "/images/image.png",
+    //   kind: "file",
+    //   fileType: "img",
+    //   position: "top-28 right-72",
+    //   imageUrl: "/images/adrian-2.jpg",
+    // },
+    // {
+    //   id: 3,
+    //   name: "conference-me.png",
+    //   icon: "/images/image.png",
+    //   kind: "file",
+    //   fileType: "img",
+    //   position: "top-52 left-80",
+    //   imageUrl: "/images/adrian-3.jpeg",
+    // },
     {
       id: 4,
       name: "about-me.txt",
       icon: "/images/txt.png",
       kind: "file",
       fileType: "txt",
-      position: "top-60 left-5",
+      position: "top-10 left-5",
       subtitle: "Meet the Developer Behind the Code",
       image: "/images/adrian.jpg",
       description: [
-        "Hey! I’m Adrian 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
-        "I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.",
-        "I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug.",
-        "Outside of dev work, you'll find me tweaking layouts at 2AM, sipping overpriced coffee, or impulse-buying gadgets I absolutely convinced myself I needed 😅",
+        "Hey, I'm Aryan 👋, a Full-Stack Developer who loves building scalable, high-performance web applications that solve real-world problems.",
+        "I specialize in the MERN stack (MongoDB, Express, React, and Node.js) and have a serious thing for Python-based DSA.",
+        "I’m all about clean code, sub-second latency, and building systems that don’t need a search party to debug.",
+        "Whether I’m integrating AI models like Gemini or architecting secure payment flows with Razorpay, I love making complex tech feel smooth and intuitive.",
+        "Outside of dev work, you’ll find me grinding through LeetCode challenges, documenting my Building in Public journey on LinkedIn, or hitting the gym in Nagpur"
       ],
     },
   ],
