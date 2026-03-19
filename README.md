@@ -1,16 +1,69 @@
-# React + Vite
+# macOS Web Portfolio 🍏
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A stunning, interactive personal portfolio website inspired by the macOS operating system. Built with React, Vite, and Tailwind CSS.
 
-Currently, two official plugins are available:
+![Desktop View](./public/desktop-screenshot.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Features
 
-## React Compiler
+- **macOS Desktop Experience**: A fully interactive desktop environment that feels just like macOS.
+- **Window Management**: Open, close, minimize, and drag windows around the screen (powered by custom hooks and GSAP).
+- **Custom Apps**: Includes beautifully designed apps like Finder, Terminal, Safari, and Photos to showcase your work and skills.
+- **Responsive Design**: Works seamlessly across desktop and mobile devices.
+- **Dock**: A functional macOS-style dock with smooth animations and interactive hover effects.
+- **Interactive Elements**: Features dynamic components with subtle micro-animations for an enhanced user experience.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📱 Mobile Experience
 
-## Expanding the ESLint configuration
+The portfolio is fully responsive, ensuring a seamless experience on mobile devices as well.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Mobile View](./public/mobile-screenshot.png)
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) installed
+- npm or yarn
+
+### Installation Steps
+
+1. Clone the repository
+   ```bash
+   git clone https://github.com/yourusername/macos-portfolio.git
+   cd macos-portfolio
+   ```
+
+2. Install dependencies
+   ```bash
+   npm install
+   ```
+
+3. Start the development server
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to `http://localhost:5173/`
+
+## 🛠️ Built With
+
+- **[React](https://reactjs.org/)** - UI Library (v19)
+- **[Vite](https://vitejs.dev/)** - Next Generation Frontend Tooling
+- **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework (v4)
+- **[GSAP](https://greensock.com/gsap/)** - Professional-grade animation library
+- **[Zustand](https://github.com/pmndrs/zustand)** - A small, fast, and scalable bearbones state-management solution
+- **[Lucide React](https://lucide.dev/)** - Beautiful & consistent icons
+
+## 🎨 Customization
+
+You can easily customize this portfolio to make it your own:
+
+- **Apps**: Modify or add new applications inside the `src/components` directory.
+- **Assets**: Replace images in the `public/images` directory with your own assets.
+- **Content**: Update the generic content in files like `Welcome.jsx`, `Terminal.jsx`, and `Photos.jsx` with your personal details and projects.
+- **Styles**: Tweak global colors and design tokens in `src/index.css`.
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
